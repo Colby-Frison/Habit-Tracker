@@ -1,4 +1,4 @@
 @tailwind base;
 @tailwind components;
-@import './login/login.css';
+@import './login.css';
 @tailwind utilities; 

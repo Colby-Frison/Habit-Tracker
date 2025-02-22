@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { userService } from '@/backend/services/userService'
-import '@/app/login/login.css'
+import '@/app/style/login.css'
 
 export default function RegisterPage() {
   const router = useRouter()
