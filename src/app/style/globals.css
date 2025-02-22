@@ -1,4 +1,12 @@
 @tailwind base;
 @tailwind components;
 @import './login.css';
-@tailwind utilities; 
+@import './home.css';
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    background-color: #070708;
+    height: 100%;
+  }
+} 
