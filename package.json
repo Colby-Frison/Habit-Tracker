@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth0/auth0-react": "^2.3.0",
     "@prisma/client": "^6.4.0",
     "@reduxjs/toolkit": "^2.2.1",
     "@supabase/supabase-js": "^2.48.1",

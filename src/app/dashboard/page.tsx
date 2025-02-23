@@ -81,28 +81,54 @@ export default function Dashboard() {
           {/* Habit Activity Calendar: Visual representation of habit completion */}
           <section className="dashboard-section github-calendar-section">
             <h2 className="section-title">Habit Activity</h2>
-            <div className="section-card">
-              <GitHubCalendar 
-                username="your-github-username"
-                blockSize={16}
-                blockMargin={6}
-                colorScheme="dark"
-                hideColorLegend
-                hideMonthLabels
-                hideTotalCount
-                labels={{
-                  totalCount: '',
-                  legend: {
-                    less: '',
-                    more: ''
-                  }
-                }}
-                style={{
-                  width: '100%',
-                  minHeight: '200px',
-                  padding: '0rem'
-                }}
-              />
+            <div className="calendar-wrapper">
+              <div className="section-card calendar-container">
+                <GitHubCalendar 
+                  username="your-github-username"
+                  blockSize={20}
+                  blockMargin={5}
+                  colorScheme="dark"
+                  hideColorLegend
+                  hideMonthLabels
+                  hideTotalCount
+                  labels={{
+                    totalCount: '',
+                    legend: {
+                      less: '',
+                      more: ''
+                    }
+                  }}
+                  style={{
+                    width: '10%', 
+                    minHeight: '100px',
+                    padding: '0rem'
+                  }}
+                  theme={{
+                    dark: ['#0a0a0a', '#1a1a1a', '#2a2a2a', '#3a3a3a', '#4a4a4a']
+                  }}
+                />
+              </div>
+
+              <div className="section-card calendar-legend">
+                <div className="legend-item">
+                  <h2 className="stats-card-title">Options</h2>
+                  <hr className="w-full border-t border-[rgba(243,242,251,0.1)] pb-4 m-0" />
+                  <ul className="legend-list">
+                    <li className="legend-item">
+                      <input type="checkbox" id="option1" name="option1" value="Option 1" />
+                      <label htmlFor="option1">Option 1</label>
+                    </li>
+                    <li className="legend-item">
+                      <input type="checkbox" id="option2" name="option2" value="Option 2" />
+                      <label htmlFor="option2">Option 2</label>
+                    </li>
+                    <li className="legend-item">
+                      <input type="checkbox" id="option3" name="option3" value="Option 3" />
+                      <label htmlFor="option3">Option 3</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </section>
 
